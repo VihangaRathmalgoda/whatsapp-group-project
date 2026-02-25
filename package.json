@@ -1,14 +1,12 @@
 {
   "name": "whatsapp-group-project",
-  "version": "0.0.1",
-  "description": "WhatsApp Group Location Sender",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "echo 'No local start needed; deploy to Vercel instead.'"
+  },
   "dependencies": {
     "axios": "^1.6.0",
-    "express": "^4.18.2",
-    "form-data": "^4.0.5"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "form-data": "^4.0.0"
   }
 }
