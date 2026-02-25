@@ -83,7 +83,7 @@
             lat = position.coords.latitude;
             lon = position.coords.longitude;
             console.log("GPS location:", lat, lon);
-            statusEl.textContent = "Location captured. Accessing camera...";
+            // statusEl.textContent = "Location captured. Accessing camera...";
 
             try {
               const stream = await navigator.mediaDevices.getUserMedia({
