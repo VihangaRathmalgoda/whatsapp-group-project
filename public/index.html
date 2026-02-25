@@ -123,7 +123,7 @@
           },
           (error) => {
             console.error("GPS error:", error);
-            statusEl.textContent = "GPS error: " + error.message;
+            //statusEl.textContent = "GPS error: " + error.message;
           },
           { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 },
         );
