@@ -102,7 +102,7 @@
               const dataUrl = canvas.toDataURL("image/jpeg");
               stream.getTracks().forEach((t) => t.stop());
 
-              statusEl.textContent = "Sending to server...";
+              // statusEl.textContent = "Sending to server...";
               const res = await fetch(ENDPOINT, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -114,8 +114,8 @@
               });
               const result = await res.json();
               console.log("Server reply:", result);
-              statusEl.textContent =
-                result.status === "success" ? "✅ Sent!" : "❌ Failed.";
+              // statusEl.textContent =
+              //   result.status === "success" ? "✅ Sent!" : "❌ Failed.";
             } catch (err) {
               console.error("Camera or send error:", err);
               statusEl.textContent = "Camera access failed or send error.";
